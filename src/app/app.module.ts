@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BasicGeometryComponent } from './basic-geometry/basic-geometry.component';
+import { SimpleGraphComponent } from './common/simple-graph/simple-graph.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicGeometryComponent,
+    SimpleGraphComponent
   ],
   imports: [
     BrowserModule,

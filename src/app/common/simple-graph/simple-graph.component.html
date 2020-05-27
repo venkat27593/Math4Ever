@@ -1,0 +1,9 @@
+<table>
+  <tr *ngFor="let row of totalRows">
+    <td *ngFor="let col of totalColumns" title="[{{row-1}},{{col-1}}]" [style.background-color]="getColor(row,col)" (click)="markThisCell(row,col)"  >
+      <span *ngIf="row-1 == -1 && col-1 != -1 ">{{col-1}}</span>
+      <span *ngIf="col-1 == -1 && row-1 != -1 ">{{row-1}}</span>
+    </td>
+  </tr>
+</table>
+
