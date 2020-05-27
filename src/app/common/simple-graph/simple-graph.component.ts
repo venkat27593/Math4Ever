@@ -11,8 +11,6 @@ export class SimpleGraphComponent implements OnInit {
   @Input() columnLength : number = 10 ;
   totalRows : number [] = [];
   totalColumns : number[] = [];
-
-
   graphData : number[][] = [] ;
 
   constructor() { }
@@ -21,7 +19,6 @@ export class SimpleGraphComponent implements OnInit {
     this.initializeIndex(this.totalRows,this.rowLength);
     this.initializeIndex(this.totalColumns,this.columnLength);
     this.initializeGraphData(this.graphData);
-    this.graphData[5][5] = 1 ;
   }
   initializeGraphData(graphData: number[][]) {
     for(var i=0 ; i<this.rowLength ; i++){
@@ -56,7 +53,6 @@ export class SimpleGraphComponent implements OnInit {
     }
     
   }
-
   markThisCell(row,col){
     this.graphData[row-1][col-1] = 1 ;
   }
